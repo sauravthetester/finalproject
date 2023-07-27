@@ -45,8 +45,9 @@ public class SampleTest extends TrainingBase {
 	@Test(priority=3)
 	public void amazonVerifyTest()
 	{
-		System.out.println("This is 3rd test which is not required");
-		
+		WebElement amazonMenuFirst = driver.findElement(By.xpath(HomePage.amazonMenuItemXpath));
+		String menuText = amazonMenuFirst.getText();
+		Assert.assertEquals(menuText, "Amazon miniTV"); // (false, false) - pass , (true, true) - pass
 	}
 	
 	@AfterMethod(groups = {"smoke"})
