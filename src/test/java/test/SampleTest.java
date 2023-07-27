@@ -42,14 +42,12 @@ public class SampleTest extends TrainingBase {
 		
 	}
 	
-	@Test(priority=3, groups = {"smoke"})
+	@Test(priority=3)
 	public void amazonVerifyTest()
 	{
 		WebElement amazonMenuFirst = driver.findElement(By.xpath(HomePage.amazonMenuItemXpath));
 		String menuText = amazonMenuFirst.getText();
-		
 		Assert.assertEquals(menuText, "Amazon miniTV"); // (false, false) - pass , (true, true) - pass
-		
 	}
 	
 	@AfterMethod(groups = {"smoke"})
