@@ -14,7 +14,7 @@ public class TrainingBase {
 	public static String url = "https://www.amazon.in/";
 	public static WebDriver driver;
 	
-	// Launching browser
+	// Launching browser chrome
 	public void initialize()
     {
 		ChromeOptions chromeOptions = new ChromeOptions();
