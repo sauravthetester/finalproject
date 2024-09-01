@@ -18,7 +18,7 @@ public class TrainingBase {
 	public void initialize()
     {
 		ChromeOptions chromeOptions = new ChromeOptions();
-    	WebDriverManager.chromedriver().setup();
+    	//WebDriverManager.chromedriver().setup();
     	driver = new ChromeDriver(chromeOptions);
     	
     	driver.get(url);
